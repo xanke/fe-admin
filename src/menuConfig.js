@@ -25,13 +25,13 @@ const asideMenuConfig = [
     ],
   },
   {
-    path: '/table',
-    name: '表格页',
+    path: '/application',
+    name: '应用管理',
     icon: 'el-icon-date',
     children: [
       {
-        path: '/basic',
-        name: '基础表格',
+        path: '/list',
+        name: '所有应用',
       },
       {
         path: '/fixed',
@@ -102,6 +102,11 @@ const asideMenuConfig = [
         name: '失败',
       },
     ],
+  },
+  {
+    name: 'appliction',
+    path: '/Appliction',
+    icon: 'home',
   },
 ];
 

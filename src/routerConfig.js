@@ -4,6 +4,7 @@
 
 import HeaderAsideLayout from './layouts/HeaderAsideLayout';
 import Dashboard from './pages/Dashboard';
+import Appliction from './pages/Appliction';
 import NotFound from './pages/NotFound';
 
 const routerConfig = [
@@ -30,14 +31,14 @@ const routerConfig = [
     ],
   },
   {
-    path: '/table',
+    path: '/application',
     layout: HeaderAsideLayout,
     component: NotFound,
     children: [
       {
-        path: '/table/basic',
+        path: '/application/list',
         layout: HeaderAsideLayout,
-        component: NotFound,
+        component: Appliction,
       },
       {
         path: '/table/fixed',
@@ -118,6 +119,11 @@ const routerConfig = [
         component: NotFound,
       },
     ],
+  },
+  {
+    path: '/Appliction',
+    layout: HeaderAsideLayout,
+    component: Appliction,
   },
   {
     path: '*',
